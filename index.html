@@ -2,222 +2,220 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Cheat_Sheet_HTML</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cheat_Sheet_HTML/CSS/JavaScript</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <h1>Cheat sheet HTML/CSS/JavaScript</h1>
-  <!------------------------------------------------------------------------->
-        <!--HTML-->
-        <!------------------------------------------------------------------------->
-    <h2>HTML</h2>
-    <table>
+<!------------------------------------------------------------------------->
+<!--HTML-->
+<!------------------------------------------------------------------------->
+<h2>HTML</h2>
+<table>
     <thead>
-      <tr><th>Balise</th><th>Description / Enfants courants</th></tr>
+        <tr><th>Balise</th><th>Description / Enfants courants</th></tr>
     </thead>
     <tbody>
+        <!-- Métadonnées & head -->
+        <tr class="category"><td colspan="2">Métadonnées & structure du document</td></tr>
+        <tr><td><code>&lt;!DOCTYPE&gt;</code></td><td>Déclare le type de document (HTML5)</td></tr>
+        <tr><td><code>&lt;html&gt;</code></td><td>Racine du document HTML</td></tr>
+        <tr><td><code>&lt;head&gt;</code></td><td>Conteneur des métadonnées</td></tr>
+        <tr><td><code>&lt;meta&gt;</code></td><td>Métadonnées diverses</td></tr>
+        <tr><td><code>&lt;title&gt;</code></td><td>Titre dans l’onglet</td></tr>
+        <tr><td><code>&lt;link&gt;</code></td><td>Lien vers ressources externes</td></tr>
+        <tr><td><code>&lt;style&gt;</code></td><td>CSS interne</td></tr>
+        <tr><td><code>&lt;script&gt;</code></td><td>Script JavaScript</td></tr>
 
-      <!-- Métadonnées & head -->
-      <tr class="category"><td colspan="2">Métadonnées & structure du document</td></tr>
-      <tr><td><code>&lt;!DOCTYPE&gt;</code></td><td>Déclare le type de document (HTML5)</td></tr>
-      <tr><td><code>&lt;html&gt;</code></td><td>Racine du document HTML</td></tr>
-      <tr><td><code>&lt;head&gt;</code></td><td>Conteneur des métadonnées</td></tr>
-      <tr><td><code>&lt;meta&gt;</code></td><td>Métadonnées diverses</td></tr>
-      <tr><td><code>&lt;title&gt;</code></td><td>Titre dans l’onglet</td></tr>
-      <tr><td><code>&lt;link&gt;</code></td><td>Lien vers ressources externes</td></tr>
-      <tr><td><code>&lt;style&gt;</code></td><td>CSS interne</td></tr>
-      <tr><td><code>&lt;script&gt;</code></td><td>Script JavaScript</td></tr>
+        <!-- Structure -->
+        <tr class="category"><td colspan="2">Structure sémantique</td></tr>
+        <tr><td><code>&lt;body&gt;</code></td><td>Contenu principal</td></tr>
+        <tr><td><code>&lt;header&gt;</code></td><td>En-tête de page ou section</td></tr>
+        <tr><td><code>&lt;nav&gt;</code></td><td>Zone de navigation</td></tr>
+        <tr><td><code>&lt;main&gt;</code></td><td>Contenu central</td></tr>
+        <tr><td><code>&lt;section&gt;</code></td><td>Partie du contenu</td></tr>
+        <tr><td><code>&lt;article&gt;</code></td><td>Contenu autonome</td></tr>
+        <tr><td><code>&lt;aside&gt;</code></td><td>Contenu secondaire</td></tr>
+        <tr><td><code>&lt;footer&gt;</code></td><td>Pied de page</td></tr>
+        <tr><td><code>&lt;figure&gt;</code></td><td>Bloc visuel</td></tr>
+        <tr><td><code>&lt;figcaption&gt;</code></td><td>Légende d’un visuel</td></tr>
 
-      <!-- Structure -->
-      <tr class="category"><td colspan="2">Structure sémantique</td></tr>
-      <tr><td><code>&lt;body&gt;</code></td><td>Contenu principal</td></tr>
-      <tr><td><code>&lt;header&gt;</code></td><td>En-tête de page ou section</td></tr>
-      <tr><td><code>&lt;nav&gt;</code></td><td>Zone de navigation</td></tr>
-      <tr><td><code>&lt;main&gt;</code></td><td>Contenu central</td></tr>
-      <tr><td><code>&lt;section&gt;</code></td><td>Partie du contenu</td></tr>
-      <tr><td><code>&lt;article&gt;</code></td><td>Contenu autonome</td></tr>
-      <tr><td><code>&lt;aside&gt;</code></td><td>Contenu secondaire</td></tr>
-      <tr><td><code>&lt;footer&gt;</code></td><td>Pied de page</td></tr>
-      <tr><td><code>&lt;figure&gt;</code></td><td>Bloc visuel</td></tr>
-      <tr><td><code>&lt;figcaption&gt;</code></td><td>Légende d’un visuel</td></tr>
+        <!-- Texte -->
+        <tr class="category"><td colspan="2">Texte & mise en forme</td></tr>
+        <tr><td><code>&lt;h1&gt; à &lt;h6&gt;</code></td><td>Titres hiérarchisés</td></tr>
+        <tr><td><code>&lt;p&gt;</code></td><td>Paragraphe</td></tr>
+        <tr><td><code>&lt;a&gt;</code></td><td>Lien hypertexte</td></tr>
+        <tr><td><code>&lt;strong&gt;</code></td><td>Texte en gras</td></tr>
+        <tr><td><code>&lt;em&gt;</code></td><td>Texte en italique</td></tr>
+        <tr><td><code>&lt;mark&gt;</code></td><td>Surlignage</td></tr>
+        <tr><td><code>&lt;br&gt;</code></td><td>Saut de ligne</td></tr>
+        <tr><td><code>&lt;blockquote&gt;</code></td><td>Longue citation</td></tr>
+        <tr><td><code>&lt;q&gt;</code></td><td>Courte citation</td></tr>
+        <tr><td><code>&lt;code&gt;</code></td><td>Code source</td></tr>
+        <tr><td><code>&lt;pre&gt;</code></td><td>Texte préformaté</td></tr>
+        <tr><td><code>&lt;small&gt;</code></td><td>Texte secondaire (mentions légales, copyright, note)</td></tr>
+        <tr><td><code>&lt;sup&gt;</code></td><td>Exposant (ex : x<sup>2</sup>)</td></tr>
+        <tr><td><code>&lt;sub&gt;</code></td><td>Indice (ex : H<sub>2</sub>O)</td></tr>
+        <tr><td><code>&lt;abbr&gt;</code></td><td>Abréviation, souvent avec un attribut <code>title</code></td></tr>
+        <tr><td><code>&lt;time&gt;</code></td><td>Date ou heure, lisible par les machines (ex : <time datetime="2025-08-28">28 août 2025</time>)</td></tr>
+        <tr><td><code>&lt;address&gt;</code></td><td>Informations de contact (adresse, auteur, organisation)</td></tr>
 
-      <!-- Texte -->
-      <tr class="category"><td colspan="2">Texte & mise en forme</td></tr>
-      <tr><td><code>&lt;h1&gt; à &lt;h6&gt;</code></td><td>Titres hiérarchisés</td></tr>
-      <tr><td><code>&lt;p&gt;</code></td><td>Paragraphe</td></tr>
-      <tr><td><code>&lt;a&gt;</code></td><td>Lien hypertexte</td></tr>
-      <tr><td><code>&lt;strong&gt;</code></td><td>Texte en gras</td></tr>
-      <tr><td><code>&lt;em&gt;</code></td><td>Texte en italique</td></tr>
-      <tr><td><code>&lt;mark&gt;</code></td><td>Surlignage</td></tr>
-      <tr><td><code>&lt;br&gt;</code></td><td>Saut de ligne</td></tr>
-      <tr><td><code>&lt;blockquote&gt;</code></td><td>Longue citation</td></tr>
-      <tr><td><code>&lt;q&gt;</code></td><td>Courte citation</td></tr>
-      <tr><td><code>&lt;code&gt;</code></td><td>Code source</td></tr>
-      <tr><td><code>&lt;pre&gt;</code></td><td>Texte préformaté</td></tr>
-      <tr><td><code>&lt;small&gt;</code></td><td>Texte secondaire (mentions légales, copyright, note)</td></tr>
-      <tr><td><code>&lt;sup&gt;</code></td><td>Exposant (ex : x<sup>2</sup>)</td></tr>
-      <tr><td><code>&lt;sub&gt;</code></td><td>Indice (ex : H<sub>2</sub>O)</td></tr>
-      <tr><td><code>&lt;abbr&gt;</code></td><td>Abréviation, souvent avec un attribut <code>title</code></td></tr>
-      <tr><td><code>&lt;time&gt;</code></td><td>Date ou heure, lisible par les machines (ex : <time datetime="2025-08-28">28 août 2025</time>)</td></tr>
-      <tr><td><code>&lt;address&gt;</code></td><td>Informations de contact (adresse, auteur, organisation)</td></tr>
+        <!-- Formulaires -->
+        <tr class="category"><td colspan="2">Formulaires & champs</td></tr>
+        <tr><td><code>&lt;form&gt;</code></td><td>Formulaire HTML</td></tr>
+        <tr><td><code>&lt;input&gt;</code></td><td>Champ de saisie</td></tr>
+        <tr><td><code>&lt;label&gt;</code></td><td>Étiquette liée à un champ</td></tr>
+        <tr><td><code>&lt;textarea&gt;</code></td><td>Zone de texte</td></tr>
+        <tr><td><code>&lt;button&gt;</code></td><td>Bouton</td></tr>
+        <tr><td><code>&lt;select&gt;</code>, <code>&lt;option&gt;</code></td><td>Menu déroulant</td></tr>
+        <tr><td><code>&lt;datalist&gt;</code></td><td>Liste de suggestions</td></tr>
 
-      <!-- Formulaires -->
-      <tr class="category"><td colspan="2">Formulaires & champs</td></tr>
-      <tr><td><code>&lt;form&gt;</code></td><td>Formulaire HTML</td></tr>
-      <tr><td><code>&lt;input&gt;</code></td><td>Champ de saisie</td></tr>
-      <tr><td><code>&lt;label&gt;</code></td><td>Étiquette liée à un champ</td></tr>
-      <tr><td><code>&lt;textarea&gt;</code></td><td>Zone de texte</td></tr>
-      <tr><td><code>&lt;button&gt;</code></td><td>Bouton</td></tr>
-      <tr><td><code>&lt;select&gt;</code>, <code>&lt;option&gt;</code></td><td>Menu déroulant</td></tr>
-      <tr><td><code>&lt;datalist&gt;</code></td><td>Liste de suggestions</td></tr>
+        <!-- Multimédia -->
+        <tr class="category"><td colspan="2">Multimédia</td></tr>
+        <tr><td><code>&lt;img&gt;</code></td><td>Image</td></tr>
+        <tr><td><code>&lt;audio&gt;</code></td><td>Audio</td></tr>
+        <tr><td><code>&lt;video&gt;</code></td><td>Vidéo</td></tr>
+        <tr><td><code>&lt;canvas&gt;</code></td><td>Zone de dessin</td></tr>
+        <tr><td><code>&lt;svg&gt;</code></td><td>Graphique vectoriel</td></tr>
 
-      <!-- Multimédia -->
-      <tr class="category"><td colspan="2">Multimédia</td></tr>
-      <tr><td><code>&lt;img&gt;</code></td><td>Image</td></tr>
-      <tr><td><code>&lt;audio&gt;</code></td><td>Audio</td></tr>
-      <tr><td><code>&lt;video&gt;</code></td><td>Vidéo</td></tr>
-      <tr><td><code>&lt;canvas&gt;</code></td><td>Zone de dessin</td></tr>
-      <tr><td><code>&lt;svg&gt;</code></td><td>Graphique vectoriel</td></tr>
+        <!-- Tableaux -->
+        <tr class="category"><td colspan="2">Tableaux</td></tr>
+        <tr><td><code>&lt;table&gt;</code></td><td>Tableau de données</td></tr>
+        <tr><td><code>&lt;caption&gt;</code></td><td>Titre de tableau</td></tr>
+        <tr><td><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></td><td>Sections du tableau</td></tr>
+        <tr><td><code>&lt;tr&gt;</code></td><td>Ligne du tableau</td></tr>
+        <tr><td><code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></td><td>Cellules de tableau</td></tr>
+        <tr><td><code>&lt;colgroup&gt;</code>, <code>&lt;col&gt;</code></td><td>Colonnes groupées</td></tr>
 
-      <!-- Tableaux -->
-      <tr class="category"><td colspan="2">Tableaux</td></tr>
-      <tr><td><code>&lt;table&gt;</code></td><td>Tableau de données</td></tr>
-      <tr><td><code>&lt;caption&gt;</code></td><td>Titre de tableau</td></tr>
-      <tr><td><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></td><td>Sections du tableau</td></tr>
-      <tr><td><code>&lt;tr&gt;</code></td><td>Ligne du tableau</td></tr>
-      <tr><td><code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></td><td>Cellules de tableau</td></tr>
-      <tr><td><code>&lt;colgroup&gt;</code>, <code>&lt;col&gt;</code></td><td>Colonnes groupées</td></tr>
+        <!-- Sélecteurs CSS -->
+        <tr class="category"><td colspan="2">Attributs et sélecteurs CSS</td></tr>
+        <tr><td><code>class</code></td><td>Attribut pour styliser plusieurs éléments</td></tr>
+        <tr><td><code>.maClasse</code></td><td>Sélecteur CSS par classe</td></tr>
+        <tr><td><code>#monId</code></td><td>Sélecteur CSS par ID</td></tr>
+        <tr><td><code>div p</code></td><td>Paragraphe dans une div (descendant)</td></tr>
+        <tr><td><code>div > p</code></td><td>Paragraphe enfant direct d’une div</td></tr>
 
-      <!-- Sélecteurs CSS -->
-      <tr class="category"><td colspan="2">Attributs et sélecteurs CSS</td></tr>
-      <tr><td><code>class</code></td><td>Attribut pour styliser plusieurs éléments</td></tr>
-      <tr><td><code>.maClasse</code></td><td>Sélecteur CSS par classe</td></tr>
-      <tr><td><code>#monId</code></td><td>Sélecteur CSS par ID</td></tr>
-      <tr><td><code>div p</code></td><td>Paragraphe dans une div (descendant)</td></tr>
-      <tr><td><code>div > p</code></td><td>Paragraphe enfant direct d’une div</td></tr>
+        <!-- Caractères spéciaux -->
+        <tr class="category"><td colspan="2">Caractères spéciaux</td></tr>
+        <tr><td><code>&amp;lt;</code></td><td>< <em>(inférieur à)</em></td></tr>
+        <tr><td><code>&amp;gt;</code></td><td>> <em>(supérieur à)</em></td></tr>
+        <tr><td><code>&amp;amp;</code></td><td>& <em>(esperluette)</em></td></tr>
+        <tr><td><code>&amp;quot;</code></td><td>" <em>(guillemets doubles)</em></td></tr>
+        <tr><td><code>&amp;nbsp;</code></td><td>Espace insécable</td></tr>
+        <tr><td><code>&amp;copy;</code></td><td>© <em>(copyright)</em></td></tr>
+        <tr><td><code>&amp;reg;</code></td><td>® <em>(marque déposée)</em></td></tr>
+        <tr><td><code>&amp;euro;</code></td><td>€ <em>(euro)</em></td></tr>
+        <tr><td><code>&amp;deg;</code></td><td>° <em>(degré)</em></td></tr>
+        <tr><td><code>&amp;hellip;</code></td><td>… <em>(points de suspension)</em></td></tr>
+        <tr><td><code>&amp;rarr;</code></td><td>→ <em>(flèche droite)</em></td></tr>
+        <tr><td><code>&amp;mdash;</code></td><td>— <em>(tiret long)</em></td></tr>
+    </tbody>
+</table>
 
-      <!-- Caractères spéciaux -->
-      <tr class="category"><td colspan="2">Caractères spéciaux</td></tr>
-      <tr><td><code>&amp;lt;</code></td><td>< <em>(inférieur à)</em></td></tr>
-      <tr><td><code>&amp;gt;</code></td><td>> <em>(supérieur à)</em></td></tr>
-      <tr><td><code>&amp;amp;</code></td><td>& <em>(esperluette)</em></td></tr>
-      <tr><td><code>&amp;quot;</code></td><td>" <em>(guillemets doubles)</em></td></tr>
-      <tr><td><code>&amp;nbsp;</code></td><td>Espace insécable</td></tr>
-      <tr><td><code>&amp;copy;</code></td><td>© <em>(copyright)</em></td></tr>
-      <tr><td><code>&amp;reg;</code></td><td>® <em>(marque déposée)</em></td></tr>
-      <tr><td><code>&amp;euro;</code></td><td>€ <em>(euro)</em></td></tr>
-      <tr><td><code>&amp;deg;</code></td><td>° <em>(degré)</em></td></tr>
-      <tr><td><code>&amp;hellip;</code></td><td>… <em>(points de suspension)</em></td></tr>
-      <tr><td><code>&amp;rarr;</code></td><td>→ <em>(flèche droite)</em></td></tr>
-      <tr><td><code>&amp;mdash;</code></td><td>— <em>(tiret long)</em></td></tr>
-
-        <!------------------------------------------------------------------------->
-        <!-- CSS -->
-        <!------------------------------------------------------------------------->
-      <h2>CSS</h2>
-  <table>
+<!------------------------------------------------------------------------->
+<!-- CSS -->
+<!------------------------------------------------------------------------->
+<h2>CSS</h2>
+<table>
     <thead>
-      <tr><th>Sélecteur</th><th>Description</th></tr>
+        <tr><th>Sélecteur</th><th>Description</th></tr>
     </thead>
     <tbody>
+        <!-- Sélecteurs CSS -->
+        <tr class="category"><td colspan="2">Sélecteurs CSS</td></tr>
+        <tr><td><code>.classe</code></td><td>Sélecteur de classe</td></tr>
+        <tr><td><code>element</code></td><td>Sélecteur de type</td></tr>
+        <tr><td><code>element1 element2</code></td><td>Sélecteur descendant</td></tr>
+        <tr><td><code>element > child</code></td><td>Enfant direct</td></tr>
+        <tr><td><code>element + next</code></td><td>Frère suivant</td></tr>
 
-      <!-- Sélecteurs CSS -->
-      <tr class="category"><td colspan="2">Sélecteurs CSS</td></tr>
-      <tr><td><code>.classe</code></td><td>Sélecteur de classe</td></tr>
-      <tr><td><code>element</code></td><td>Sélecteur de type</td></tr>
-      <tr><td><code>element1 element2</code></td><td>Sélecteur descendant</td></tr>
-      <tr><td><code>element > child</code></td><td>Enfant direct</td></tr>
-      <tr><td><code>element + next</code></td><td>Frère suivant</td></tr>
+        <!-- Texte -->
+        <tr class="category"><td colspan="2">Texte & Typographie</td></tr>
+        <tr><td><code>color</code></td><td>Couleur du texte</td></tr>
+        <tr><td><code>font-size</code></td><td>Taille de police</td></tr>
+        <tr><td><code>font-family</code></td><td>Police de caractères</td></tr>
+        <tr><td><code>font-weight</code></td><td>Épaisseur : normal, bold</td></tr>
+        <tr><td><code>line-height</code></td><td>Hauteur de ligne</td></tr>
+        <tr><td><code>text-align</code></td><td>Alignement : left, center…</td></tr>
+        <tr><td><code>text-decoration</code></td><td>Ex : underline, none</td></tr>
 
-      <!-- Texte -->
-      <tr class="category"><td colspan="2">Texte & Typographie</td></tr>
-      <tr><td><code>color</code></td><td>Couleur du texte</td></tr>
-      <tr><td><code>font-size</code></td><td>Taille de police</td></tr>
-      <tr><td><code>font-family</code></td><td>Police de caractères</td></tr>
-      <tr><td><code>font-weight</code></td><td>Épaisseur : normal, bold</td></tr>
-      <tr><td><code>line-height</code></td><td>Hauteur de ligne</td></tr>
-      <tr><td><code>text-align</code></td><td>Alignement : left, center…</td></tr>
-      <tr><td><code>text-decoration</code></td><td>Ex : underline, none</td></tr>
+        <!-- Couleurs & arrière-plan -->
+        <tr class="category"><td colspan="2">Couleurs & Fonds</td></tr>
+        <tr><td><code>background-color</code></td><td>Couleur de fond</td></tr>
+        <tr><td><code>background-image</code></td><td>Image de fond</td></tr>
+        <tr><td><code>opacity</code></td><td>Transparence (0 à 1)</td></tr>
+        <tr><td><code>box-shadow</code></td><td>Ombre portée</td></tr>
 
-      <!-- Couleurs & arrière-plan -->
-      <tr class="category"><td colspan="2">Couleurs & Fonds</td></tr>
-      <tr><td><code>background-color</code></td><td>Couleur de fond</td></tr>
-      <tr><td><code>background-image</code></td><td>Image de fond</td></tr>
-      <tr><td><code>opacity</code></td><td>Transparence (0 à 1)</td></tr>
-      <tr><td><code>box-shadow</code></td><td>Ombre portée</td></tr>
+        <!-- Box model -->
+        <tr class="category"><td colspan="2">Box Model</td></tr>
+        <tr><td><code>margin</code></td><td>Marge externe</td></tr>
+        <tr><td><code>padding</code></td><td>Marge interne</td></tr>
+        <tr><td><code>border</code></td><td>Bordure</td></tr>
+        <tr><td><code>width</code></td><td>Largeur</td></tr>
+        <tr><td><code>height</code></td><td>Hauteur</td></tr>
+        <tr><td><code>box-sizing</code></td><td>border-box / content-box</td></tr>
 
-      <!-- Box model -->
-      <tr class="category"><td colspan="2">Box Model</td></tr>
-      <tr><td><code>margin</code></td><td>Marge externe</td></tr>
-      <tr><td><code>padding</code></td><td>Marge interne</td></tr>
-      <tr><td><code>border</code></td><td>Bordure</td></tr>
-      <tr><td><code>width</code></td><td>Largeur</td></tr>
-      <tr><td><code>height</code></td><td>Hauteur</td></tr>
-      <tr><td><code>box-sizing</code></td><td>border-box / content-box</td></tr>
+        <!-- Flexbox -->
+        <tr class="category"><td colspan="2">Mise en page : Flexbox</td></tr>
+        <tr><td><code>display: flex</code></td><td>Conteneur flexible</td></tr>
+        <tr><td><code>flex-direction</code></td><td>row / column</td></tr>
+        <tr><td><code>justify-content</code></td><td>Alignement horizontal</td></tr>
+        <tr><td><code>align-items</code></td><td>Alignement vertical</td></tr>
+        <tr><td><code>gap</code></td><td>Espacement entre éléments</td></tr>
 
-      <!-- Flexbox -->
-      <tr class="category"><td colspan="2">Mise en page : Flexbox</td></tr>
-      <tr><td><code>display: flex</code></td><td>Conteneur flexible</td></tr>
-      <tr><td><code>flex-direction</code></td><td>row / column</td></tr>
-      <tr><td><code>justify-content</code></td><td>Alignement horizontal</td></tr>
-      <tr><td><code>align-items</code></td><td>Alignement vertical</td></tr>
-      <tr><td><code>gap</code></td><td>Espacement entre éléments</td></tr>
+        <!-- Grid -->
+        <tr class="category"><td colspan="2">Mise en page : Grid</td></tr>
+        <tr><td><code>display: grid</code></td><td>Activer la grille</td></tr>
+        <tr><td><code>grid-template-columns</code></td><td>Colonnes définies</td></tr>
+        <tr><td><code>grid-template-rows</code></td><td>Lignes définies</td></tr>
+        <tr><td><code>gap</code></td><td>Espacement grille</td></tr>
+        <tr><td><code>grid-column / grid-row</code></td><td>Positionnement d’un item</td></tr>
 
-      <!-- Grid -->
-      <tr class="category"><td colspan="2">Mise en page : Grid</td></tr>
-      <tr><td><code>display: grid</code></td><td>Activer la grille</td></tr>
-      <tr><td><code>grid-template-columns</code></td><td>Colonnes définies</td></tr>
-      <tr><td><code>grid-template-rows</code></td><td>Lignes définies</td></tr>
-      <tr><td><code>gap</code></td><td>Espacement grille</td></tr>
-      <tr><td><code>grid-column / grid-row</code></td><td>Positionnement d’un item</td></tr>
+        <!-- Positionnement -->
+        <tr class="category"><td colspan="2">Positionnement</td></tr>
+        <tr><td><code>position</code></td><td>static, relative, absolute…</td></tr>
+        <tr><td><code>top / right / bottom / left</code></td><td>Décalage</td></tr>
+        <tr><td><code>z-index</code></td><td>Profondeur d’affichage</td></tr>
 
-      <!-- Positionnement -->
-      <tr class="category"><td colspan="2">Positionnement</td></tr>
-      <tr><td><code>position</code></td><td>static, relative, absolute…</td></tr>
-      <tr><td><code>top / right / bottom / left</code></td><td>Décalage</td></tr>
-      <tr><td><code>z-index</code></td><td>Profondeur d’affichage</td></tr>
+        <!-- Transitions / animations -->
+        <tr class="category"><td colspan="2">Transitions & Animations</td></tr>
+        <tr><td><code>transition</code></td><td>Ex : <code>all 0.3s ease</code></td></tr>
+        <tr><td><code>@keyframes</code></td><td>Animation personnalisée</td></tr>
+        <tr><td><code>animation</code></td><td>Déclenchement d'animation</td></tr>
 
-      <!-- Transitions / animations -->
-      <tr class="category"><td colspan="2">Transitions & Animations</td></tr>
-      <tr><td><code>transition</code></td><td>Ex : <code>all 0.3s ease</code></td></tr>
-      <tr><td><code>@keyframes</code></td><td>Animation personnalisée</td></tr>
-      <tr><td><code>animation</code></td><td>Déclenchement d'animation</td></tr>
+        <!-- Responsive -->
+        <tr class="category"><td colspan="2">Responsive & Media Queries</td></tr>
+        <tr><td><code>@media</code></td><td>Conditionnelle selon l'écran</td></tr>
+        <tr><td><code>max-width</code></td><td>Largeur maximale</td></tr>
+        <tr><td><code>min-width</code></td><td>Largeur minimale</td></tr>
 
-      <!-- Responsive -->
-      <tr class="category"><td colspan="2">Responsive & Media Queries</td></tr>
-      <tr><td><code>@media</code></td><td>Conditionnelle selon l'écran</td></tr>
-      <tr><td><code>max-width</code></td><td>Largeur maximale</td></tr>
-      <tr><td><code>min-width</code></td><td>Largeur minimale</td></tr>
+        <!-- Unités -->
+        <tr class="category"><td colspan="2">Unités utiles</td></tr>
+        <tr><td><code>px</code></td><td>Pixels (fixe)</td></tr>
+        <tr><td><code>%</code></td><td>Pourcentage (relative)</td></tr>
+        <tr><td><code>em</code>, <code>rem</code></td><td>Relative à la police</td></tr>
+        <tr><td><code>vw</code>, <code>vh</code></td><td>Viewport width / height</td></tr>
 
-      <!-- Unités -->
-      <tr class="category"><td colspan="2">Unités utiles</td></tr>
-      <tr><td><code>px</code></td><td>Pixels (fixe)</td></tr>
-      <tr><td><code>%</code></td><td>Pourcentage (relative)</td></tr>
-      <tr><td><code>em</code>, <code>rem</code></td><td>Relative à la police</td></tr>
-      <tr><td><code>vw</code>, <code>vh</code></td><td>Viewport width / height</td></tr>
-
-      <!-- Pseudo-éléments -->
-      <tr class="category"><td colspan="2">Pseudo-classes & Pseudo-éléments</td></tr>
-      <tr><td><code>:hover</code></td><td>Survol de l’élément</td></tr>
-      <tr><td><code>:focus</code></td><td>Focus clavier</td></tr>
-      <tr><td><code>::before / ::after</code></td><td>Ajout de contenu</td></tr>
-
+        <!-- Pseudo-éléments -->
+        <tr class="category"><td colspan="2">Pseudo-classes & Pseudo-éléments</td></tr>
+        <tr><td><code>:hover</code></td><td>Survol de l’élément</td></tr>
+        <tr><td><code>:focus</code></td><td>Focus clavier</td></tr>
+        <tr><td><code>::before / ::after</code></td><td>Ajout de contenu</td></tr>
     </tbody>
-  </table>
-    </tbody>
-  </table>
-        <!------------------------------------------------------------------------->
-        <!-- JavaScript -->
-        <!------------------------------------------------------------------------->
-      <h2>JavaScript</h2>
-      <table>
-      <thead>
+</table>
+
+<!------------------------------------------------------------------------->
+<!-- JavaScript -->
+<!------------------------------------------------------------------------->
+<h2>JavaScript</h2>
+<table>
+    <thead>
         <tr>
-          <th>Syntaxe / Méthode</th>
-          <th>Description / Exemple</th>
+            <th>Syntaxe / Méthode</th>
+            <th>Description / Exemple</th>
         </tr>
-      </thead>
-      <tbody>
+    </thead>
+    <tbody>
         <!-- Structure & variables -->
         <tr class="category"><td colspan="2">Base du langage</td></tr>
         <tr><td><code>let</code></td><td>Déclare une variable à portée de bloc (modulable).<br><em>Ex :</em><code>let age = 25;</code></td></tr>
@@ -290,82 +288,79 @@
         <tr class="category"><td colspan="2">Modules & import/export</td></tr>
         <tr><td><code>export function nom()</code></td><td>Exporte une fonction depuis un fichier JS</td></tr>
         <tr><td><code>import { nom } from "./module.js"</code></td><td>Importe un module</td></tr>
-      </tbody>
-    </table>
+    </tbody>
+</table>
 
-
-      <!------------------------------------------------------------------------->
-        <!-- Bootstrap -->
-        <!------------------------------------------------------------------------->
-        <h2>Bootstrap</h2>
-  <table>
+<!------------------------------------------------------------------------->
+<!-- Bootstrap -->
+<!------------------------------------------------------------------------->
+<h2>Bootstrap</h2>
+<table>
     <thead>
-      <tr><th>Classe</th><th>Description</th></tr>
+        <tr><th>Classe</th><th>Description</th></tr>
     </thead>
     <tbody>
+        <!-- Layout de base -->
+        <tr class="category"><td colspan="2">Layout</td></tr>
+        <tr><td><code>.container</code> / <code>.container-fluid</code></td><td>Conteneur fixe / plein écran</td></tr>
+        <tr><td><code>.row</code></td><td>Ligne de grille</td></tr>
+        <tr><td><code>.col</code> / <code>.col-*</code></td><td>Colonne responsive</td></tr>
+        <tr><td><code>.g-*</code></td><td>Espacement entre colonnes</td></tr>
 
-      <!-- Layout de base -->
-      <tr class="category"><td colspan="2">Layout</td></tr>
-      <tr><td><code>.container</code> / <code>.container-fluid</code></td><td>Conteneur fixe / plein écran</td></tr>
-      <tr><td><code>.row</code></td><td>Ligne de grille</td></tr>
-      <tr><td><code>.col</code> / <code>.col-*</code></td><td>Colonne responsive</td></tr>
-      <tr><td><code>.g-*</code></td><td>Espacement entre colonnes</td></tr>
+        <!-- Flexbox -->
+        <tr class="category"><td colspan="2">Flexbox</td></tr>
+        <tr><td><code>.d-flex</code></td><td>Active flexbox</td></tr>
+        <tr><td><code>.justify-content-center</code></td><td>Centre horizontalement</td></tr>
+        <tr><td><code>.align-items-center</code></td><td>Centre verticalement</td></tr>
+        <tr><td><code>.flex-column</code></td><td>Direction verticale</td></tr>
 
-      <!-- Flexbox -->
-      <tr class="category"><td colspan="2">Flexbox</td></tr>
-      <tr><td><code>.d-flex</code></td><td>Active flexbox</td></tr>
-      <tr><td><code>.justify-content-center</code></td><td>Centre horizontalement</td></tr>
-      <tr><td><code>.align-items-center</code></td><td>Centre verticalement</td></tr>
-      <tr><td><code>.flex-column</code></td><td>Direction verticale</td></tr>
+        <!-- Typographie -->
+        <tr class="category"><td colspan="2">Texte</td></tr>
+        <tr><td><code>.h1 ... .h6</code></td><td>Titres</td></tr>
+        <tr><td><code>.lead</code></td><td>Texte mis en avant</td></tr>
+        <tr><td><code>.fw-bold</code></td><td>Texte en gras</td></tr>
+        <tr><td><code>.fst-italic</code></td><td>Texte italique</td></tr>
+        <tr><td><code>.text-center</code></td><td>Texte centré</td></tr>
+        <tr><td><code>.text-primary</code> / <code>.text-danger</code></td><td>Couleur du texte</td></tr>
 
-      <!-- Typographie -->
-      <tr class="category"><td colspan="2">Texte</td></tr>
-      <tr><td><code>.h1 ... .h6</code></td><td>Titres</td></tr>
-      <tr><td><code>.lead</code></td><td>Texte mis en avant</td></tr>
-      <tr><td><code>.fw-bold</code></td><td>Texte en gras</td></tr>
-      <tr><td><code>.fst-italic</code></td><td>Texte italique</td></tr>
-      <tr><td><code>.text-center</code></td><td>Texte centré</td></tr>
-      <tr><td><code>.text-primary</code> / <code>.text-danger</code></td><td>Couleur du texte</td></tr>
+        <!-- Couleurs & fonds -->
+        <tr class="category"><td colspan="2">Couleurs</td></tr>
+        <tr><td><code>.bg-primary</code> / <code>.bg-light</code></td><td>Couleur de fond</td></tr>
+        <tr><td><code>.bg-opacity-50</code></td><td>Transparence du fond</td></tr>
 
-      <!-- Couleurs & fonds -->
-      <tr class="category"><td colspan="2">Couleurs</td></tr>
-      <tr><td><code>.bg-primary</code> / <code>.bg-light</code></td><td>Couleur de fond</td></tr>
-      <tr><td><code>.bg-opacity-50</code></td><td>Transparence du fond</td></tr>
+        <!-- Espacement -->
+        <tr class="category"><td colspan="2">Espacement</td></tr>
+        <tr><td><code>.m-3</code> / <code>.p-3</code></td><td>Marge / padding</td></tr>
+        <tr><td><code>.mt-5</code></td><td>Marge en haut</td></tr>
+        <tr><td><code>.mx-auto</code></td><td>Centre horizontalement (marge auto)</td></tr>
 
-      <!-- Espacement -->
-      <tr class="category"><td colspan="2">Espacement</td></tr>
-      <tr><td><code>.m-3</code> / <code>.p-3</code></td><td>Marge / padding</td></tr>
-      <tr><td><code>.mt-5</code></td><td>Marge en haut</td></tr>
-      <tr><td><code>.mx-auto</code></td><td>Centre horizontalement (marge auto)</td></tr>
+        <!-- Boutons -->
+        <tr class="category"><td colspan="2">Boutons</td></tr>
+        <tr><td><code>.btn btn-primary</code></td><td>Bouton principal bleu</td></tr>
+        <tr><td><code>.btn btn-outline-danger</code></td><td>Bouton contour rouge</td></tr>
+        <tr><td><code>.btn-lg</code> / <code>.btn-sm</code></td><td>Taille des boutons</td></tr>
 
-      <!-- Boutons -->
-      <tr class="category"><td colspan="2">Boutons</td></tr>
-      <tr><td><code>.btn btn-primary</code></td><td>Bouton principal bleu</td></tr>
-      <tr><td><code>.btn btn-outline-danger</code></td><td>Bouton contour rouge</td></tr>
-      <tr><td><code>.btn-lg</code> / <code>.btn-sm</code></td><td>Taille des boutons</td></tr>
+        <!-- Composants fréquents -->
+        <tr class="category"><td colspan="2">Composants fréquents</td></tr>
+        <tr><td><code>.alert alert-warning</code></td><td>Alerte jaune</td></tr>
+        <tr><td><code>.card</code></td><td>Carte avec contenu</td></tr>
+        <tr><td><code>.navbar navbar-light bg-light</code></td><td>Barre de navigation claire</td></tr>
+        <tr><td><code>.modal</code></td><td>Fenêtre modale</td></tr>
+        <tr><td><code>.dropdown</code></td><td>Menu déroulant</td></tr>
 
-      <!-- Composants fréquents -->
-      <tr class="category"><td colspan="2">Composants fréquents</td></tr>
-      <tr><td><code>.alert alert-warning</code></td><td>Alerte jaune</td></tr>
-      <tr><td><code>.card</code></td><td>Carte avec contenu</td></tr>
-      <tr><td><code>.navbar navbar-light bg-light</code></td><td>Barre de navigation claire</td></tr>
-      <tr><td><code>.modal</code></td><td>Fenêtre modale</td></tr>
-      <tr><td><code>.dropdown</code></td><td>Menu déroulant</td></tr>
+        <!-- Tables & formulaires -->
+        <tr class="category"><td colspan="2">Tables & formulaires</td></tr>
+        <tr><td><code>.table table-striped</code></td><td>Tableau avec bandes</td></tr>
+        <tr><td><code>.form-control</code></td><td>Champ de saisie</td></tr>
+        <tr><td><code>.form-check</code></td><td>Checkbox / radio</td></tr>
+        <tr><td><code>.input-group</code></td><td>Champs groupés</td></tr>
 
-      <!-- Tables & formulaires -->
-      <tr class="category"><td colspan="2">Tables & formulaires</td></tr>
-      <tr><td><code>.table table-striped</code></td><td>Tableau avec bandes</td></tr>
-      <tr><td><code>.form-control</code></td><td>Champ de saisie</td></tr>
-      <tr><td><code>.form-check</code></td><td>Checkbox / radio</td></tr>
-      <tr><td><code>.input-group</code></td><td>Champs groupés</td></tr>
-
-      <!-- Utilitaires visuels -->
-      <tr class="category"><td colspan="2">Utilitaires visuels</td></tr>
-      <tr><td><code>.border</code> / <code>.rounded</code></td><td>Bordure / arrondi</td></tr>
-      <tr><td><code>.shadow</code></td><td>Ombre portée</td></tr>
-      <tr><td><code>.img-fluid</code></td><td>Image responsive</td></tr>
-
+        <!-- Utilitaires visuels -->
+        <tr class="category"><td colspan="2">Utilitaires visuels</td></tr>
+        <tr><td><code>.border</code> / <code>.rounded</code></td><td>Bordure / arrondi</td></tr>
+        <tr><td><code>.shadow</code></td><td>Ombre portée</td></tr>
+        <tr><td><code>.img-fluid</code></td><td>Image responsive</td></tr>
     </tbody>
-  </table>
+</table>
 </body>
 </html>
