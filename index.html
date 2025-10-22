@@ -2,11 +2,62 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Cheat_Sheet_HTML/CSS/JavaScript</title>
+  <title>Cheat_Sheet_Web</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1>Cheat sheet HTML/CSS/JavaScript</h1>
+<h1>Cheat sheet HTML - CSS- JavaScript</h1>
+<button id="theme-toggle" title="Changer le thème">🌙</button>
+<!------------------------------------------------------------------------->
+<!-- INTRODUCTION & RESSOURCES -->
+<!------------------------------------------------------------------------->
+<h2>Bonnes pratiques HTML & Accessibilité</h2>
+<table>
+    <thead>
+        <tr><th>Bonne pratique</th><th>Explication / Exemple</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Utiliser une structure sémantique</td><td><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> plutôt que des <code>&lt;div&gt;</code> partout.</td></tr>
+        <tr><td>Ajouter des attributs <code>alt</code> aux images</td><td><code>&lt;img src="chat.png" alt="Chat noir"&gt;</code></td></tr>
+        <tr><td>Employer des balises logiques</td><td><code>&lt;em&gt;</code> pour une emphase, <code>&lt;strong&gt;</code> pour une importance.</td></tr>
+        <tr><td>Utiliser <code>aria-label</code> ou <code>role</code></td><td>Améliore la navigation des lecteurs d’écran.</td></tr>
+        <tr><td>Vérifier le contraste du texte</td><td>Assure une bonne lisibilité pour tous les utilisateurs.</td></tr>
+        <tr><td>Respecter la hiérarchie des titres</td><td>Un seul <code>&lt;h1&gt;</code> par page, puis <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>...</td></tr>
+    </tbody>
+</table>
+
+<h2>Outils et commandes pratiques</h2>
+<table>
+    <thead>
+        <tr><th>Outil / Commande</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>CTRL + /</code></td><td>Commenter / décommenter une ligne (éditeur)</td></tr>
+        <tr><td><code>Live Server</code></td><td>Extension VS Code pour visualiser le site en direct</td></tr>
+        <tr><td><code>npm init</code></td><td>Initialise un projet Node.js</td></tr>
+        <tr><td><code>npm install bootstrap</code></td><td>Installe Bootstrap via npm</td></tr>
+        <tr><td><code>git init</code></td><td>Crée un dépôt Git local</td></tr>
+        <tr><td><code>git commit -m "message"</code></td><td>Enregistre les modifications</td></tr>
+        <tr><td><code>git push origin main</code></td><td>Envoie les fichiers vers GitHub</td></tr>
+    </tbody>
+</table>
+
+<h2>Ressources et références utiles</h2>
+<table>
+    <thead>
+        <tr><th>Site</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a></td><td>Documentation officielle HTML, CSS, JS</td></tr>
+        <tr><td><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></td><td>Articles et astuces sur le CSS moderne</td></tr>
+        <tr><td><a href="https://codepen.io/" target="_blank">CodePen</a></td><td>Tester et partager du code en ligne</td></tr>
+        <tr><td><a href="https://unsplash.com/" target="_blank">Unsplash</a></td><td>Banque d’images gratuites et libres de droits</td></tr>
+        <tr><td><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></td><td>Bibliothèque d’icônes vectorielles</td></tr>
+        <tr><td><a href="https://colors.muz.li/" target="_blank">Color Muzli</a></td><td>Générateur de palettes de couleurs</td></tr>
+        <tr><td><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></td><td>Valide le code HTML/CSS pour détecter les erreurs</td></tr>
+    </tbody>
+</table>
+
 <!------------------------------------------------------------------------->
 <!--HTML-->
 <!------------------------------------------------------------------------->
@@ -362,5 +413,6 @@
         <tr><td><code>.img-fluid</code></td><td>Image responsive</td></tr>
     </tbody>
 </table>
+<script src="assets/srcipt.js"></script>
 </body>
 </html>
