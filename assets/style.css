@@ -13,6 +13,7 @@ THEME GÉNÉRAL dark/light
 body.light {
   --bg: #f9f9f9;
   --text: #222222;
+  --accent: #c509bc;
   --card: #ffffff;
   --border: #dddddd;
   --header: #f1f1f1;
