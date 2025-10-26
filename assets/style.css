@@ -179,6 +179,47 @@ THÈME SWITCH (BOUTON OPTIONNEL)
 }
 
 /* ==========================================================
+FOOTER
+========================================================== */
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--accent);
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--text);
+}
+
+.github-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1); /* pour être visible sur fond sombre */
+    transition: transform 0.3s ease;
+}
+
+body.light .github-icon {
+    filter: invert(0); /* visible sur fond clair */
+}
+
+footer a:hover .github-icon {
+    transform: scale(1.2);
+}
+
+/* ==========================================================
 RESPONSIVE
 ========================================================== */
 @media (max-width: 768px) {
